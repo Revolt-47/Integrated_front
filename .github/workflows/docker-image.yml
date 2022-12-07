@@ -26,6 +26,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          file: ./frontend
+          file: ./frontend/Dockerfile
           push: true
           tags: revolt47/integration:latest
