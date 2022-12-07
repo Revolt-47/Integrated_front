@@ -5,6 +5,7 @@ FROM node:12
 WORKDIR /app
 # Copy app files
 COPY . .
+COPY package*.json ./
 # ==== BUILD =====
 # Install dependencies (npm ci makes sure the exact versions in the lockfile gets installed)
 RUN npm ci
