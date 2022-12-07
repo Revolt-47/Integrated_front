@@ -2,7 +2,7 @@
 # Use a Node 16 base image
 FROM node:12
 # Set the working directory to /app inside the container
-WORKDIR /.
+WORKDIR /frontend
 # Copy app files
 COPY . .
 # ==== BUILD =====
